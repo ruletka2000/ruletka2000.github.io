@@ -1,0 +1,12 @@
+@media only screen and (min-width: 1366px) {
+  .section-resize-on-scroll .section-logo {
+    width: 203px;
+    height: 26.5px;
+    margin-top: 67px;
+  }
+  .section-resize-on-scroll .sub-title {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 77px;
+  }
+}

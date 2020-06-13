@@ -1,0 +1,36 @@
+.section-resize-on-scroll {
+  height: 75vh;
+  height: calc((var(--vh1,1vh) * 75));
+  padding-top: 0.1px;
+}
+
+.section-resize-on-scroll .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-resize-on-scroll .section-logo {
+  width: 110px;
+  height: 15px;
+  margin-top: 45px;
+  margin-left: 20px;
+}
+
+.section-resize-on-scroll .sub-title {
+  text-align: right;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 39px;
+  margin-right: 20px;
+  font-weight: 500;
+}

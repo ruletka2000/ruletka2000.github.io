@@ -1,0 +1,800 @@
+@media only screen and (min-width: 1366px) {
+  .section-flights .filter-flights-form .form-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 49px;
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap {
+    width: auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label input:checked + .text {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label input:checked + .text {
+    height: 90px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text {
+    width: auto;
+    white-space: nowrap;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 28px 85px 30px 120px;
+    height: 80px;
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text:before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 70px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text {
+    padding: 30px 50px 25px 80px;
+    height: 70px;
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text:before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text.prylit:before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text.rozklad:before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .section-flights .filter-flights-form .form-inner .data-picker-wrap {
+    margin-top: 0;
+    margin-right: 15px;
+    width: 270px;
+    height: 73px;
+    position: relative;
+  }
+  .section-flights .filter-flights-form .form-inner .data-picker-wrap .toggle-label {
+    height: 73px;
+  }
+  .section-flights .filter-flights-form .form-inner .row {
+    margin-top: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .section-flights .filter-flights-form .form-inner .row .input-text-wrap {
+    margin-top: 0;
+    height: 73px;
+  }
+  .section-flights .filter-flights-form .form-inner .row .input-text-wrap input {
+    height: 73px;
+  }
+  .section-flights .filter-flights-form .form-inner .row .accent-btn {
+    display: none;
+  }
+  .section-flights .flights-table .flights-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-flights .flights-table .flights-item:hover {
+    cursor: pointer;
+    background-color: #F6F5FF;
+  }
+  .section-flights .flights-table .flights-item:before {
+    display: none;
+  }
+  .section-flights .flights-table .flights-item:after {
+    display: none;
+  }
+  .section-flights .flights-table .flights-item.only-desk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .section-flights .flights-table .flights-item.only-desk:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    background-color: #E0E0E0;
+  }
+  .section-flights .flights-table .flights-item.only-desk > * {
+    color: #6C6B75 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+  .section-flights .flights-table .flights-item .time {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 7%;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .section-flights .flights-table .flights-item .company {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 27%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-flights .flights-table .flights-item .company .logo {
+    display: block;
+    width: 47px;
+    height: 47px;
+    margin-right: 10px;
+  }
+  .section-flights .flights-table .flights-item .number {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 11%;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .section-flights .flights-table .flights-item .vector {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    width: 23%;
+  }
+  .section-flights .flights-table .flights-item .vector .name {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .section-flights .flights-table .flights-item .vector .sub-name {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .section-flights .flights-table .flights-item .status {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    width: 11%;
+    font-size: 16px;
+  }
+  .section-flights .flights-table .flights-item .fact-time {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    width: 7%;
+    font-size: 16px;
+  }
+  .section-flights .flights-table .flights-item .terminal {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+    width: 8%;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .section-flights .flights-table .flights-item .terminal .prompt {
+    display: none;
+  }
+  .section-flights .flights-table .flights-item .geit {
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .section-flights .flights-table .flights-item .geit .prompt {
+    display: none;
+  }
+  .flights-more-info {
+    z-index: 300;
+    opacity: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    pointer-events: none;
+    background-color: #F6F5FF;
+  }
+  .flights-more-info.open {
+    pointer-events: all;
+  }
+  .flights-more-info__inner {
+    padding-top: 95px;
+    min-height: calc(100% - 95px);
+  }
+  .flights-more-info__inner .container {
+    -webkit-transform: translateX(80px);
+        -ms-transform: translateX(80px);
+            transform: translateX(80px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .flights-more-info__inner .container .container-wrap {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 48px;
+  }
+  .flights-more-info__inner .link:after {
+    width: 18px;
+    height: 18px;
+    top: 5px;
+  }
+  .flights-more-info__inner .aside {
+    width: 100%;
+    max-width: 360px;
+  }
+  .flights-more-info__inner .aside .img-wrap img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .flights-more-info__inner .row .btn-back {
+    color: #63376F;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .flights-more-info__inner .row .btn-back:hover:before {
+    -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  .flights-more-info__inner .row .btn-back:before {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-image: url("../../../img/arrow-to-left-accent.svg");
+  }
+  .flights-more-info__inner .warning {
+    margin-top: 39px;
+    padding: 26px 75px 25px 103px;
+  }
+  .flights-more-info__inner .warning:before {
+    left: 36px;
+    top: 30px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .flights-more-info__inner .warning__title {
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .flights-more-info__inner .warning__text {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 6px;
+  }
+  .flights-more-info__inner .warning__close-btn {
+    top: 44px;
+    right: 43px;
+  }
+  .flights-more-info__inner .sub-title {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .sub-title {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner h4 {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr 3fr 3fr;
+    grid-template-columns: 3fr 1fr 3fr 3fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+        grid-template-areas: "numberSub . airline airline" "number  . airline airline" "kod . . ." "btn . airplane airport";
+  }
+  .flights-more-info__inner .info-about-flight .number-of-flight-subtitle {
+    grid-area: numberSub;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 41px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .number-of-flight-subtitle {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .number-of-flight {
+    grid-area: number;
+    font-size: 85px;
+    line-height: 113px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .number-of-flight {
+    font-size: 75px;
+    line-height: 100px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .kod {
+    grid-area: kod;
+  }
+  .flights-more-info__inner .info-about-flight .accent-btn {
+    grid-area: btn;
+    white-space: nowrap;
+    margin-top: 30px;
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .accent-btn {
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .accent-btn:after {
+    display: none;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info {
+    grid-area: airline;
+    margin: 0;
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+    -ms-grid-columns: 1fr 25px 3fr;
+    grid-template-columns: 1fr 3fr;
+        grid-template-areas: "logo subTitle " "logo link";
+  }
+  .flights-more-info__inner .info-about-flight .airline-info .logo .img-wrap {
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info .logo {
+    grid-area: logo;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info .sub-title {
+    grid-area: subTitle;
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airline-info .sub-title {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airline-info .link {
+    grid-area: link;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airline-info .logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info .sub-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info .link {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airline-info .link {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airplane {
+    grid-area: airplane;
+    margin: 0;
+  }
+  .flights-more-info__inner .info-about-flight .airplane .sub-title {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airplane .sub-title {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airplane h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airplane h4 {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airport {
+    grid-area: airport;
+    margin: 0;
+  }
+  .flights-more-info__inner .info-about-flight .airport .sub-title {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .number-of-flight-subtitle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .info-about-flight .number-of-flight {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .info-about-flight .kod {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .info-about-flight .accent-btn {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .info-about-flight .airplane {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+  }
+  .flights-more-info__inner .info-about-flight .airport {
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airport .sub-title {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airport .link {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airport .link {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail {
+    margin-top: 41px;
+        grid-template-areas: "airportInfo timingInfo";
+    -ms-grid-columns: 2fr 80px 1fr;
+    grid-template-columns: 2fr 1fr;
+    -webkit-column-gap: 80px;
+       -moz-column-gap: 80px;
+            column-gap: 80px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .flight-detail {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info {
+    grid-area: airportInfo;
+    -ms-grid-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    -ms-grid-rows: min-content min-content min-content min-content min-content;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "countryStart countryStart countryEnd countryEnd" "cityStart cityStart cityEnd cityEnd" "terminalStart terminalStart terminalEnd terminalEnd" "timeStart flightImg flightImg timeEnd" "dateStart timeInAir timeInAir dateEnd";
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info:after {
+    display: none;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air {
+    grid-area: timeInAir;
+    margin: 0;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    align-self: flex-end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air .sub-title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air .sub-title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air .time-in-air__time {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air .time-in-air__time {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info .flight-img {
+    grid-area: flightImg;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0;
+    background-image: url("../../../img/flight-path-desk.svg");
+    width: 100%;
+    height: 46px;
+    -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .country.country--start {
+    grid-area: countryStart;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .country.country--end {
+    grid-area: countryEnd;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .city.city--start {
+    grid-area: cityStart;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .city.city--end {
+    grid-area: cityEnd;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .terminal {
+    margin-top: 5px;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .terminal.terminal--start {
+    grid-area: terminalStart;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .terminal.terminal--end {
+    grid-area: terminalEnd;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time {
+    margin-top: 0;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time.time--start {
+    grid-area: timeStart;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time.time--end {
+    grid-area: timeEnd;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .date {
+    margin-top: 5px;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .date.date--start {
+    grid-area: dateStart;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .date.date--end {
+    grid-area: dateEnd;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-timing-info {
+    grid-area: timingInfo;
+    margin: 0;
+  }
+  .flights-more-info__inner .flight-detail .flight-timing-info:after {
+    display: none;
+  }
+  .flights-more-info__inner .flight-detail .flight-timing-info .title {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .flight-img {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .country.country--start {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .country.country--end {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .city.city--start {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .city.city--end {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .terminal.terminal--start {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .terminal.terminal--end {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time.time--start {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time.time--end {
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .date.date--start {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .date.date--end {
+    -ms-grid-row: 5;
+    -ms-grid-column: 4;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .flight-detail .flight-timing-info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .flight-detail .flight-timing-info .title {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .flights-more-info__inner .flight-share .link-grey {
+    margin-bottom: 0;
+    margin-right: 35px;
+  }
+}

@@ -1,0 +1,53 @@
+@media only screen and (min-width: 1366px) {
+  .section-need-helps .title {
+    margin-top: 72px;
+    font-size: 28px;
+    line-height: 37px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .section-need-helps .need-helps-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 82px;
+  }
+  .section-need-helps .need-helps-list__item {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-bottom: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .section-need-helps .need-helps-list__item-title {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+  .section-need-helps .need-helps-list__item-btn {
+    margin: 0;
+    font-size: 20px;
+    line-height: 27px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .section-need-helps .need-helps-list__item-btn:after {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .section-need-helps .need-helps-list__item-btn:hover {
+    color: #63376F;
+  }
+  .section-need-helps .need-helps-list__item-btn:hover:after {
+    -webkit-transform: translateY(-50%) translateX(10px);
+        -ms-transform: translateY(-50%) translateX(10px);
+            transform: translateY(-50%) translateX(10px);
+  }
+}

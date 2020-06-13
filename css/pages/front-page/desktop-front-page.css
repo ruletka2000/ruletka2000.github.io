@@ -1,0 +1,2305 @@
+@media only screen and (min-width: 1366px) {
+  .main-wrap.shifted {
+    cursor: pointer;
+  }
+  .main-wrap.shifted * {
+    pointer-events: none;
+  }
+  h1, .h1 {
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-width: 1800px) {
+  h1, .h1 {
+    font-size: 65px;
+    line-height: 85px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .container {
+    max-width: 1780px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+  .only-desk {
+    display: block;
+  }
+  .only-mob {
+    display: none;
+  }
+  .accent-btn {
+    -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: #63376F;
+    border-radius: 8px;
+    font-size: 17px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 71px;
+    padding: 0 50px;
+    color: #fff;
+    font-weight: 500;
+    width: auto;
+  }
+  .accent-btn:after {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 15px;
+    background-image: url("../../../img/semi-arrow-to-right.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 62px;
+  }
+  .accent-btn:hover:after {
+    -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  .accent-btn.accent-btn--search:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../../../img/ico-search.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .header.white {
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.11);
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.11);
+    border: none;
+  }
+  .header.white .nav ul li a {
+    color: #000;
+  }
+  .header.white .search .search__sheet .close-btn span {
+    background-color: #717171;
+  }
+  .header.white .container > .profile svg .fill, .header.white .container > .for-partners svg .fill {
+    fill: #000;
+  }
+  .header.white .container > .profile svg .stroke, .header.white .container > .for-partners svg .stroke {
+    stroke: #000;
+  }
+  .header.white .container > .profile span, .header.white .container > .for-partners span {
+    color: #000;
+  }
+  .header.white .languages ul li a span {
+    color: #000;
+  }
+  .header.white .languages:before, .header.white .languages:after {
+    background-color: #000;
+  }
+  .header.white .ui-system {
+    height: 100%;
+    border-right: 1px solid #C7C7C7;
+    border-left: 1px solid #C7C7C7;
+    border-radius: 0;
+  }
+  .header.white .ui-system a svg path, .header.white .ui-system a svg circle {
+    fill: #35343C;
+  }
+  .header {
+    height: 95px;
+  }
+  .header .logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 168px;
+    height: 39px;
+    margin-right: 10px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-width: 1800px) {
+  .header .logo {
+    margin-right: 40px;
+    width: 232px;
+    height: 54px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header .nav {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 59px;
+  }
+  .header .nav > ul {
+    position: static;
+    padding: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    height: 100%;
+    background: transparent;
+    overflow: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .nav > ul > li {
+    height: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .header .nav > ul > li.long:hover a:before, .header .nav > ul > li.long:hover a:after {
+    bottom: -30px;
+  }
+  .header .nav > ul > li:nth-last-child(1) a {
+    padding-right: 0;
+  }
+  .header .nav > ul > li:hover > a {
+    color: #63376F;
+  }
+  .header .nav > ul > li:hover > a:before {
+    background-color: white;
+    bottom: 0;
+  }
+  .header .nav > ul > li:hover a + ul {
+    visibility: visible;
+    opacity: 1;
+  }
+  .header .nav > ul > li:hover a + ul:before {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .header .nav > ul > li:hover a + ul li {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .header .nav > ul > li a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px 0 13px;
+    white-space: nowrap;
+    position: relative;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-width: 1800px) {
+  .header .nav > ul > li a {
+    font-size: 17px;
+    padding: 0 30px 0 26px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header .nav > ul > li a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+  }
+  .header .nav > ul > li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    border-radius: 14px;
+  }
+  .header .nav > ul > li > ul {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: visibility 0s, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -o-transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    height: auto;
+    overflow: visible;
+    padding: 60px 50px 40px 50px;
+    width: 300px;
+    max-height: 260px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: transparent;
+    margin-top: 5px;
+  }
+  .header .nav > ul > li > ul:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    left: -100px;
+    right: -100px;
+    background-color: #fff;
+    border-radius: 14px;
+    -webkit-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  .header .nav > ul > li > ul ul {
+    display: none !important;
+  }
+  .header .nav > ul > li > ul > li {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: auto;
+    margin: 0;
+    max-width: 165px;
+  }
+  .header .nav > ul > li > ul > li:last-child {
+    display: none;
+  }
+  .header .nav > ul > li > ul > li a {
+    color: #000;
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 24px;
+    white-space: normal;
+    padding: 0;
+  }
+  .header .nav > ul > li > ul > li a:before, .header .nav > ul > li > ul > li a:after {
+    display: none;
+  }
+  .header .nav > ul > li > ul > li a:hover {
+    color: #63376F;
+  }
+  .header .nav > ul li .for-partners, .header .nav > ul li .profile {
+    display: none;
+  }
+  .header .search {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 15px 0 auto;
+    height: 59px;
+    position: relative;
+    width: 22px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-width: 1800px) {
+  .header .search {
+    margin: 0 25px 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header .search.open {
+    z-index: 500;
+  }
+  .header .search.open .search__sheet .search-btn {
+    width: 45px;
+    margin-right: 10px;
+  }
+  .header .search.open .search__sheet .search-btn svg path {
+    fill: #717171;
+  }
+  .header .search .search__sheet {
+    border-radius: 14px;
+    padding: 0;
+  }
+  .header .search .search__sheet input {
+    padding-left: 20px;
+    display: none;
+  }
+  .header .search .search__sheet .close-btn {
+    right: 10px;
+    cursor: pointer;
+  }
+  .header .search .search__sheet .close-btn span {
+    background-color: #717171;
+  }
+  .header .search .search__sheet .search-btn {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 22px;
+    cursor: pointer;
+  }
+  .header .search .search__sheet .search-btn svg {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .header .search .search__sheet .search-btn:hover svg {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .header .container > .profile, .header .container > .for-partners {
+    margin-right: 15px;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 50;
+    height: 69px;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-width: 1800px) {
+  .header .container > .profile, .header .container > .for-partners {
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header .container > .profile:before, .header .container > .for-partners:before {
+    display: none;
+  }
+  .header .container > .profile svg, .header .container > .for-partners svg {
+    width: 23px;
+    height: 23px;
+  }
+  .header .container > .profile svg .fill, .header .container > .for-partners svg .fill {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    fill: #fff;
+  }
+  .header .container > .profile svg .stroke, .header .container > .for-partners svg .stroke {
+    stroke: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .header .container > .profile span, .header .container > .for-partners span {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    font-weight: 400;
+  }
+  .header .container > .profile:before, .header .container > .profile:after, .header .container > .for-partners:before, .header .container > .for-partners:after {
+    display: none;
+  }
+  .header .container > .for-partners {
+    margin-right: 10px;
+  }
+  .header .container > .profile span {
+    display: none;
+  }
+  .header .languages {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 69px;
+    width: 60px;
+    margin-right: 10px;
+  }
+  .header .languages:before, .header .languages:after {
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    right: 10px;
+  }
+  .header .languages.open:before, .header .languages.open:after {
+    background-color: #000;
+  }
+  .header .languages.open ul li {
+    background-color: #fff;
+  }
+  .header .languages.open ul li:after {
+    opacity: 1;
+  }
+  .header .languages.open ul li a span {
+    color: #000;
+  }
+  .header .languages ul {
+    border-radius: 10px;
+  }
+  .header .languages ul li {
+    -webkit-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    background-color: transparent;
+  }
+  .header .languages ul li:after {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .header .languages ul li a span {
+    color: #fff;
+    font-weight: 400;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-width: 1800px) {
+  .header .languages {
+    margin-right: 20px;
+    width: 90px;
+  }
+  .header .languages:before, .header .languages:after {
+    right: 20px;
+  }
+  .header .languages ul {
+    border-radius: 14px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header .ui-system {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+    width: 69px;
+    height: 69px;
+    background-color: #fff;
+    border-radius: 19px;
+    margin-right: 0;
+    margin-left: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-width: 1800px) {
+  .header .ui-system {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header .ui-system .svg-for-desk {
+    display: block;
+  }
+  .header .ui-system .svg-for-mob {
+    display: none;
+  }
+  .header .ui-system a svg {
+    width: 35px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .header .ui-system a svg path, .header .ui-system a svg circle {
+    fill: #65707b;
+  }
+  .header .open-close-btn {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+    display: none;
+  }
+  .swiper-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100px;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 62px;
+    height: 62px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin: 0;
+    outline: none;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  .swiper-button-prev:after, .swiper-button-next:after {
+    display: none;
+  }
+  .swiper-button-prev:before, .swiper-button-next:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../img/arrow-to-top-white.svg");
+  }
+  .swiper-button-prev {
+    margin-top: 48px;
+    margin-bottom: 8px;
+  }
+  .swiper-button-prev:before {
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .swiper-button-prev:hover {
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  .swiper-button-next:before {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+        -ms-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+  }
+  .swiper-button-next:hover {
+    -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  .data-picker-wrap .picker {
+    display: block;
+  }
+  .transparent-btn {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 71px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0 58px 0 48px;
+    font-size: 16px;
+  }
+  .transparent-btn:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .footer .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 83px;
+    margin-bottom: 81px;
+  }
+  .footer .footer-list .title {
+    padding-right: 0;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 33px;
+  }
+  .footer .footer-list .title:after {
+    display: none;
+  }
+  .footer .footer-list__item {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-right: 30px;
+  }
+  .footer .footer-list__item-list {
+    display: block;
+  }
+  .footer .footer-list__item-list-item {
+    margin-bottom: 24px;
+  }
+  .footer .footer-list__item-list-item a {
+    text-align: left;
+    font-size: 15px;
+    line-height: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .footer .footer-list__item-list-item a:hover {
+    color: #63376F;
+  }
+  .footer .footer-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 45px;
+    margin-bottom: 42px;
+  }
+  .footer .footer-row .created-by span {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .footer .footer-row .created-by:hover span {
+    color: orange;
+  }
+  .pop-up-need-help {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9000;
+    pointer-events: none;
+  }
+  .pop-up-need-help.open {
+    pointer-events: all;
+  }
+  .pop-up-need-help.open .bg-img {
+    opacity: 0.4;
+  }
+  .pop-up-need-help .bg-img {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: block;
+  }
+  .pop-up-need-help .trigger {
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 100%;
+    margin-right: 47px;
+    margin-bottom: 47px;
+    white-space: nowrap;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 36px 60px;
+    -webkit-transform: translateX(50%) translateY(-50%) rotate(-90deg);
+        -ms-transform: translateX(50%) translateY(-50%) rotate(-90deg);
+            transform: translateX(50%) translateY(-50%) rotate(-90deg);
+  }
+  .pop-up-need-help .need-helps-list__item-btn--not-btn:hover {
+    color: initial;
+  }
+  .pop-up-need-help .wrap {
+    max-height: 100vh;
+    right: 0;
+    left: auto;
+    bottom: 50%;
+    -webkit-transform: translate(100%, 50%);
+        -ms-transform: translate(100%, 50%);
+            transform: translate(100%, 50%);
+    top: auto;
+  }
+  .pop-up-need-help .content {
+    position: relative;
+    max-width: 420px;
+    max-height: 630px;
+    z-index: 100;
+    border-radius: 0;
+    border-top-left-radius: 13px;
+    background-color: #fff;
+    padding: 51px 80px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: auto;
+  }
+  .pop-up-need-help .content .soc-btns-wrap {
+    margin-top: 15px;
+  }
+  .pop-up-need-help .btn-back {
+    font-weight: 700;
+    color: #000;
+    font-size: 22px;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 45px;
+  }
+  .pop-up-need-help .btn-back:after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-image: url("../../../img/arrow-to-left.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .need-helps-list__item-title {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+  .need-helps-list__item-btn {
+    margin: 0;
+    font-size: 20px;
+    line-height: 27px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .need-helps-list__item-btn:after {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .need-helps-list__item-btn:hover {
+    color: #63376F;
+  }
+  .need-helps-list__item-btn:hover:after {
+    -webkit-transform: translateY(-50%) translateX(10px);
+        -ms-transform: translateY(-50%) translateX(10px);
+            transform: translateY(-50%) translateX(10px);
+  }
+  .soc-btn {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .soc-btn:hover {
+    background-color: #63376F;
+    border-color: #63376F;
+  }
+  .soc-btn:hover svg * {
+    fill: #fff;
+  }
+  .soc-btn svg * {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .pop-up-pamyatka {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9000;
+    pointer-events: none;
+  }
+  .pop-up-pamyatka.open {
+    pointer-events: all;
+  }
+  .pop-up-pamyatka.open .bg-img {
+    opacity: 0.4;
+  }
+  .pop-up-pamyatka .bg-img {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: block;
+  }
+  .pop-up-pamyatka .wrap {
+    max-height: 100vh;
+    right: 55px;
+    left: auto;
+    bottom: 50%;
+    -webkit-transform: translate(100%, 50%);
+        -ms-transform: translate(100%, 50%);
+            transform: translate(100%, 50%);
+    top: auto;
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    opacity: 0;
+  }
+  .pop-up-pamyatka .content {
+    position: relative;
+    max-width: 582px;
+    max-height: 630px;
+    z-index: 100;
+    background-color: #fff;
+    padding: 45px 45px 40px 56px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: auto;
+  }
+  .pop-up-pamyatka .close-btn {
+    top: 45px;
+    right: 45px;
+    cursor: pointer;
+  }
+  .pop-up-pamyatka .close-btn span {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    left: 50%;
+    -webkit-transform: transla;
+        -ms-transform: transla;
+            transform: transla;
+  }
+  .pop-up-pamyatka .close-btn:hover span {
+    width: 60%;
+  }
+  .pop-up-pamyatka .title-type {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  .pop-up-pamyatka .title {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+  .pop-up-pamyatka p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  .pop-up-pamyatka .second-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .pop-up-pamyatka ul li {
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 3px;
+  }
+  .pop-up-pamyatka .btn-ok {
+    background-color: #EBD82F;
+    padding: 22px 64px 24px 55px;
+    color: #482152;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    border-radius: 15px;
+    margin-top: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .pop-up-pamyatka .btn-ok:hover {
+    background-color: #63376F;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-first .bg-img:before {
+    opacity: 0.4;
+  }
+  .section-first .section-first__text-slider .container {
+    top: 55%;
+  }
+  .section-first h1, .section-first .h1 {
+    text-align: left;
+  }
+  .section-first .accent-btn {
+    margin-top: 64px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .section-first .navigation-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .section-first .section-first__navigation {
+    position: relative;
+    right: 0;
+    top: 0;
+    left: auto;
+    bottom: 0;
+    width: 66px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .section-first .weather-container {
+    left: 0;
+    right: 0;
+  }
+  .section-first .section-first__weather {
+    margin-left: 0;
+    margin-top: 45px;
+    height: 56px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-height: 650px) {
+  .section-first .section-first__weather {
+    height: 66px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-first .section-first__weather .half {
+    -webkit-box-flex: unset;
+        -ms-flex-positive: unset;
+            flex-grow: unset;
+    width: auto;
+    padding-left: 20px;
+  }
+  .section-first .section-first__weather .half:first-child {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+  .section-first .section-first__weather .half:first-child:after {
+    top: 20px;
+    bottom: 16px;
+    right: 0;
+  }
+  .section-first .section-first__weather .city {
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 12px;
+    line-height: 33px;
+  }
+  .section-first .section-first__weather .time {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+  }
+  .section-first .section-first__weather .ico {
+    width: 34px;
+    height: 23px;
+    margin-right: 8px;
+    line-height: auto;
+  }
+  .section-first .section-first__weather .temperature {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 33px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-flights .filter-flights-form .form-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 49px;
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap {
+    width: auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label input:checked + .text {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label input:checked + .text {
+    height: 90px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text {
+    width: auto;
+    white-space: nowrap;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 28px 85px 30px 120px;
+    height: 80px;
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text:before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 70px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text {
+    padding: 30px 50px 25px 80px;
+    height: 70px;
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text:before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text.prylit:before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .section-flights .filter-flights-form .form-inner .radio-filter-wrap label .text.rozklad:before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .section-flights .filter-flights-form .form-inner .data-picker-wrap {
+    margin-top: 0;
+    margin-right: 15px;
+    width: 270px;
+    height: 73px;
+    position: relative;
+  }
+  .section-flights .filter-flights-form .form-inner .data-picker-wrap .toggle-label {
+    height: 73px;
+  }
+  .section-flights .filter-flights-form .form-inner .row {
+    margin-top: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .section-flights .filter-flights-form .form-inner .row .input-text-wrap {
+    margin-top: 0;
+    height: 73px;
+  }
+  .section-flights .filter-flights-form .form-inner .row .input-text-wrap input {
+    height: 73px;
+  }
+  .section-flights .filter-flights-form .form-inner .row .accent-btn {
+    display: none;
+  }
+  .section-flights .flights-table .flights-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-flights .flights-table .flights-item:hover {
+    cursor: pointer;
+    background-color: #F6F5FF;
+  }
+  .section-flights .flights-table .flights-item:before {
+    display: none;
+  }
+  .section-flights .flights-table .flights-item:after {
+    display: none;
+  }
+  .section-flights .flights-table .flights-item.only-desk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .section-flights .flights-table .flights-item.only-desk:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    background-color: #E0E0E0;
+  }
+  .section-flights .flights-table .flights-item.only-desk > * {
+    color: #6C6B75 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+  .section-flights .flights-table .flights-item .time {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 7%;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .section-flights .flights-table .flights-item .company {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 27%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-flights .flights-table .flights-item .company .logo {
+    display: block;
+    width: 47px;
+    height: 47px;
+    margin-right: 10px;
+  }
+  .section-flights .flights-table .flights-item .number {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 11%;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .section-flights .flights-table .flights-item .vector {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    width: 23%;
+  }
+  .section-flights .flights-table .flights-item .vector .name {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .section-flights .flights-table .flights-item .vector .sub-name {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .section-flights .flights-table .flights-item .status {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    width: 11%;
+    font-size: 16px;
+  }
+  .section-flights .flights-table .flights-item .fact-time {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    width: 7%;
+    font-size: 16px;
+  }
+  .section-flights .flights-table .flights-item .terminal {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+    width: 8%;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .section-flights .flights-table .flights-item .terminal .prompt {
+    display: none;
+  }
+  .section-flights .flights-table .flights-item .geit {
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .section-flights .flights-table .flights-item .geit .prompt {
+    display: none;
+  }
+  .flights-more-info {
+    z-index: 300;
+    opacity: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    pointer-events: none;
+    background-color: #F6F5FF;
+  }
+  .flights-more-info.open {
+    pointer-events: all;
+  }
+  .flights-more-info__inner {
+    padding-top: 95px;
+    min-height: calc(100% - 95px);
+  }
+  .flights-more-info__inner .container {
+    -webkit-transform: translateX(80px);
+        -ms-transform: translateX(80px);
+            transform: translateX(80px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .flights-more-info__inner .container .container-wrap {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 48px;
+  }
+  .flights-more-info__inner .link:after {
+    width: 18px;
+    height: 18px;
+    top: 5px;
+  }
+  .flights-more-info__inner .aside {
+    width: 100%;
+    max-width: 360px;
+  }
+  .flights-more-info__inner .aside .img-wrap img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .flights-more-info__inner .row .btn-back {
+    color: #63376F;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .flights-more-info__inner .row .btn-back:hover:before {
+    -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  .flights-more-info__inner .row .btn-back:before {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-image: url("../../../img/arrow-to-left-accent.svg");
+  }
+  .flights-more-info__inner .warning {
+    margin-top: 39px;
+    padding: 26px 75px 25px 103px;
+  }
+  .flights-more-info__inner .warning:before {
+    left: 36px;
+    top: 30px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .flights-more-info__inner .warning__title {
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .flights-more-info__inner .warning__text {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 6px;
+  }
+  .flights-more-info__inner .warning__close-btn {
+    top: 44px;
+    right: 43px;
+  }
+  .flights-more-info__inner .sub-title {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .sub-title {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner h4 {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr 3fr 3fr;
+    grid-template-columns: 3fr 1fr 3fr 3fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+        grid-template-areas: "numberSub . airline airline" "number  . airline airline" "kod . . ." "btn . airplane airport";
+  }
+  .flights-more-info__inner .info-about-flight .number-of-flight-subtitle {
+    grid-area: numberSub;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 41px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .number-of-flight-subtitle {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .number-of-flight {
+    grid-area: number;
+    font-size: 85px;
+    line-height: 113px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .number-of-flight {
+    font-size: 75px;
+    line-height: 100px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .kod {
+    grid-area: kod;
+  }
+  .flights-more-info__inner .info-about-flight .accent-btn {
+    grid-area: btn;
+    white-space: nowrap;
+    margin-top: 30px;
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .accent-btn {
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .accent-btn:after {
+    display: none;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info {
+    grid-area: airline;
+    margin: 0;
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+    -ms-grid-columns: 1fr 25px 3fr;
+    grid-template-columns: 1fr 3fr;
+        grid-template-areas: "logo subTitle " "logo link";
+  }
+  .flights-more-info__inner .info-about-flight .airline-info .logo .img-wrap {
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info .logo {
+    grid-area: logo;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info .sub-title {
+    grid-area: subTitle;
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airline-info .sub-title {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airline-info .link {
+    grid-area: link;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airline-info .logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info .sub-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info .link {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airline-info .link {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airplane {
+    grid-area: airplane;
+    margin: 0;
+  }
+  .flights-more-info__inner .info-about-flight .airplane .sub-title {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airplane .sub-title {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airplane h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airplane h4 {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airport {
+    grid-area: airport;
+    margin: 0;
+  }
+  .flights-more-info__inner .info-about-flight .airport .sub-title {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .number-of-flight-subtitle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .info-about-flight .number-of-flight {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .info-about-flight .kod {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .info-about-flight .accent-btn {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .info-about-flight .airline-info {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .info-about-flight .airplane {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+  }
+  .flights-more-info__inner .info-about-flight .airport {
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airport .sub-title {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .info-about-flight .airport .link {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .info-about-flight .airport .link {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail {
+    margin-top: 41px;
+        grid-template-areas: "airportInfo timingInfo";
+    -ms-grid-columns: 2fr 80px 1fr;
+    grid-template-columns: 2fr 1fr;
+    -webkit-column-gap: 80px;
+       -moz-column-gap: 80px;
+            column-gap: 80px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .flight-detail {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info {
+    grid-area: airportInfo;
+    -ms-grid-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    -ms-grid-rows: min-content min-content min-content min-content min-content;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "countryStart countryStart countryEnd countryEnd" "cityStart cityStart cityEnd cityEnd" "terminalStart terminalStart terminalEnd terminalEnd" "timeStart flightImg flightImg timeEnd" "dateStart timeInAir timeInAir dateEnd";
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info:after {
+    display: none;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air {
+    grid-area: timeInAir;
+    margin: 0;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    align-self: flex-end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air .sub-title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air .sub-title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air .time-in-air__time {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air .time-in-air__time {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info .flight-img {
+    grid-area: flightImg;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0;
+    background-image: url("../../../img/flight-path-desk.svg");
+    width: 100%;
+    height: 46px;
+    -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .country.country--start {
+    grid-area: countryStart;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .country.country--end {
+    grid-area: countryEnd;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .city.city--start {
+    grid-area: cityStart;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .city.city--end {
+    grid-area: cityEnd;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .terminal {
+    margin-top: 5px;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .terminal.terminal--start {
+    grid-area: terminalStart;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .terminal.terminal--end {
+    grid-area: terminalEnd;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time {
+    margin-top: 0;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time.time--start {
+    grid-area: timeStart;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time.time--end {
+    grid-area: timeEnd;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .date {
+    margin-top: 5px;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .date.date--start {
+    grid-area: dateStart;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .date.date--end {
+    grid-area: dateEnd;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .flights-more-info__inner .flight-detail .flight-timing-info {
+    grid-area: timingInfo;
+    margin: 0;
+  }
+  .flights-more-info__inner .flight-detail .flight-timing-info:after {
+    display: none;
+  }
+  .flights-more-info__inner .flight-detail .flight-timing-info .title {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info .time-in-air {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .flight-img {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .country.country--start {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .country.country--end {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .city.city--start {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .city.city--end {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .terminal.terminal--start {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .terminal.terminal--end {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time.time--start {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .time.time--end {
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .date.date--start {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .flight-detail .flight-airport-info .date.date--end {
+    -ms-grid-row: 5;
+    -ms-grid-column: 4;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-detail .flight-airport-info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .flights-more-info__inner .flight-detail .flight-timing-info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1680px) {
+  .flights-more-info__inner .flight-detail .flight-timing-info .title {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .flights-more-info__inner .flight-share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .flights-more-info__inner .flight-share .link-grey {
+    margin-bottom: 0;
+    margin-right: 35px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-services .sub-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .section-services h3 {
+    font-size: 34px;
+    text-align: left;
+    margin-bottom: 43px;
+  }
+  .section-services .services-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .section-services .services-list__item {
+    margin-bottom: 0;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .section-services .services-list__item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #BCBBC7;
+    z-index: 10;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .section-services .services-list__item:first-child:before {
+    display: none;
+  }
+  .section-services .services-list__item:hover:before, .section-services .services-list__item:hover + .services-list__item:before {
+    background-color: transparent;
+  }
+  .section-services .services-list__item a {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 174px 20px 83px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .section-services .services-list__item a:hover {
+    background-color: #63376F;
+  }
+  .section-services .services-list__item a:hover .ico * {
+    fill: #fff;
+  }
+  .section-services .services-list__item a:hover .text {
+    color: #fff;
+  }
+  .section-services .services-list__item .ico {
+    width: 65px;
+    height: 65px;
+    top: 93px;
+    left: 50%;
+    margin-left: -32.5px;
+  }
+  .section-services .services-list__item .ico * {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .section-services .services-list__item .text {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 26px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .section-services .services-slider-container {
+    height: 527px;
+  }
+  .section-services .services-slider-container .swiper-slide {
+    padding: 0 159px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-services .services-slider-container .swiper-slide .sub-title {
+    font-size: 22px;
+    text-align: left;
+  }
+  .section-services .services-slider-container .swiper-slide h2 {
+    font-size: 42px;
+    text-align: left;
+    line-height: 58px;
+    margin-bottom: 53px;
+  }
+  .section-services .services-slider-container .swiper-slide .accent-btn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .section-services .services-slider-container .swiper-pagination {
+    display: none;
+  }
+  .section-services .services-slider-container .swiper-button-prev, .section-services .services-slider-container .swiper-button-next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .section-services .services-slider-container .swiper-button-prev:before, .section-services .services-slider-container .swiper-button-next:before {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+        -ms-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .section-services .services-slider-container .swiper-button-prev:after, .section-services .services-slider-container .swiper-button-next:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .section-services .services-slider-container .swiper-button-prev {
+    right: auto;
+    left: 40px;
+  }
+  .section-services .services-slider-container .swiper-button-prev:before {
+    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+        -ms-transform: translate(-50%, -50%) rotate(-90deg);
+            transform: translate(-50%, -50%) rotate(-90deg);
+  }
+  .section-services .services-slider-container .swiper-button-prev:hover {
+    -webkit-transform: translateX(-10px) translateY(-50%);
+        -ms-transform: translateX(-10px) translateY(-50%);
+            transform: translateX(-10px) translateY(-50%);
+  }
+  .section-services .services-slider-container .swiper-button-prev:hover:after {
+    -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  .section-services .services-slider-container .swiper-button-next {
+    right: 40px;
+    left: auto;
+  }
+  .section-services .services-slider-container .swiper-button-next:hover {
+    -webkit-transform: translateX(10px) translateY(-50%);
+        -ms-transform: translateX(10px) translateY(-50%);
+            transform: translateX(10px) translateY(-50%);
+  }
+  .section-services .services-slider-container .swiper-button-next:hover:after {
+    -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-resize-on-scroll .section-logo {
+    width: 203px;
+    height: 26.5px;
+    margin-top: 67px;
+  }
+  .section-resize-on-scroll .sub-title {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 77px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-helps {
+    padding-top: 0;
+  }
+  .section-helps .helps-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section-helps .helps-item {
+    margin-bottom: 0;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 9vh 50px 10vh;
+  }
+  .section-helps .bg-img:before {
+    background: -webkit-gradient(linear, left top, left bottom, from(#60707A), to(#34333B));
+    background: -o-linear-gradient(#60707A, #34333B);
+    background: linear-gradient(#60707A, #34333B);
+  }
+  .section-helps .helps-item__title {
+    font-size: 28px;
+    line-height: 38px;
+    text-align: left;
+    margin-top: 31px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-width: 1680px) {
+  .section-helps .helps-item__title {
+    font-size: 34px;
+    line-height: 46px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-helps .helps-item__text {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    max-width: 250px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-width: 1680px) {
+  .section-helps .helps-item__text {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-news .sub-title {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 69px;
+    text-align: left;
+  }
+  .section-news .title {
+    font-size: 34px;
+    text-align: left;
+    margin-bottom: 42px;
+  }
+  .section-news .swiper-slide:first-child .bg-img {
+    border-top-left-radius: 108px;
+  }
+  .section-news .swiper-slide .bg-img {
+    height: 380px;
+    bottom: auto;
+    right: 27px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .section-news .swiper-slide .content {
+    margin-left: 33px;
+    margin-top: 254px;
+    padding: 40px 40px 63px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .section-news .swiper-slide .content:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #63376F;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .section-news .swiper-slide .date {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .section-news .swiper-slide .slide-title {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .section-news .swiper-slide .slide-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .section-news .navigation-group {
+    position: absolute;
+    top: 69px;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section-news .navigation-group .swiper-pagination {
+    display: none;
+  }
+  .section-news .navigation-group .accent-btn {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 21px;
+  }
+  .section-news .navigation-group .swiper-button-prev, .section-news .navigation-group .swiper-button-next {
+    display: block;
+    border-color: #CCCCCC;
+    height: 67px;
+    width: 67px;
+    margin: 0;
+  }
+  .section-news .navigation-group .swiper-button-prev:before, .section-news .navigation-group .swiper-button-next:before {
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-image: url("../../../img/arrow-to-left-grey.svg");
+  }
+  .section-news .navigation-group .swiper-button-prev:after, .section-news .navigation-group .swiper-button-next:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .section-news .navigation-group .swiper-button-prev {
+    margin-right: 3px;
+  }
+  .section-news .navigation-group .swiper-button-prev:before {
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .section-news .navigation-group .swiper-button-prev:hover {
+    -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  .section-news .navigation-group .swiper-button-prev:hover:after {
+    -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  .section-news .navigation-group .swiper-button-next:before {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg);
+        -ms-transform: translate(-50%, -50%) rotate(180deg);
+            transform: translate(-50%, -50%) rotate(180deg);
+  }
+  .section-news .navigation-group .swiper-button-next:hover {
+    -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  .section-news .navigation-group .swiper-button-next:hover:after {
+    -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-need-helps .title {
+    margin-top: 72px;
+    font-size: 28px;
+    line-height: 37px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .section-need-helps .need-helps-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 82px;
+  }
+  .section-need-helps .need-helps-list__item {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-bottom: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .section-need-helps .need-helps-list__item-title {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+  .section-need-helps .need-helps-list__item-btn {
+    margin: 0;
+    font-size: 20px;
+    line-height: 27px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .section-need-helps .need-helps-list__item-btn:after {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .section-need-helps .need-helps-list__item-btn:hover {
+    color: #63376F;
+  }
+  .section-need-helps .need-helps-list__item-btn:hover:after {
+    -webkit-transform: translateY(-50%) translateX(10px);
+        -ms-transform: translateY(-50%) translateX(10px);
+            transform: translateY(-50%) translateX(10px);
+  }
+}

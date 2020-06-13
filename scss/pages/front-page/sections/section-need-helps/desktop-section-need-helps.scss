@@ -1,0 +1,55 @@
+@import '../../../../global/vars';
+@import '../../../../global/mixins';
+
+@include minw(1366px) {
+  .section-need-helps {
+    .title {
+      margin-top: 72px;
+      font-size: 28px;
+      line-height: 37px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .need-helps-list { 
+      display: flex;
+      margin-bottom: 82px;
+    }
+
+    .need-helps-list__item {
+      flex-basis: 0;
+      flex-grow: 1;
+      margin-bottom: 0;
+      align-items: flex-start;
+    }
+
+    .need-helps-list__item-title {
+      margin-bottom: 14px;
+      font-size: 17px;
+      line-height: 22px;
+      font-weight: 500;
+      // &:before {
+      //   width: 22px;
+      //   height: 22px;
+      //   top: 11px;
+      // }
+    }
+
+    .need-helps-list__item-btn { 
+      margin: 0;
+      font-size: 20px;
+      line-height: 27px;
+      transition: all 0.3s ease-in-out;
+      &:after {
+        transition: all 0.3s ease-in-out;
+        
+      }
+      &:hover {
+        color: $accent;
+        &:after {
+          transform: translateY(-50%) translateX(10px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.section-need-helps {
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+}
+
+.section-need-helps .title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-top: 35px;
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.section-need-helps .need-helps-list {
+  margin-bottom: 27px;
+}
+
+.section-need-helps .need-helps-list__item {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-need-helps .need-helps-list__item-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  color: #63376F;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.section-need-helps .need-helps-list__item-title:before {
+  content: '';
+  margin-right: 7px;
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 15px;
+  position: relative;
+}
+
+.section-need-helps .need-helps-list__item-title.ico--phone:before {
+  background-image: url("../../../img/ico-phone-purple.svg");
+}
+
+.section-need-helps .need-helps-list__item-title.ico--question:before {
+  background-image: url("../../../img/ico-question-purple.svg");
+}
+
+.section-need-helps .need-helps-list__item-title.ico--map:before {
+  background-image: url("../../../img/ico-map-purple.svg");
+}
+
+.section-need-helps .need-helps-list__item-title.ico--comment:before {
+  background-image: url("../../../img/ico-comment-purple.svg");
+}
+
+.section-need-helps .need-helps-list__item-btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding-right: 24px;
+  color: #000;
+}
+
+.section-need-helps .need-helps-list__item-btn:after {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  background-image: url("../../../img/semi-arrow-to-right-black.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

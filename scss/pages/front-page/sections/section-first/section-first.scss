@@ -1,0 +1,171 @@
+@import '../../../../global/vars';
+@import '../../../../global/mixins';
+
+.section-first {
+  height: 100vh;
+  height: calc((var(--vh1,1vh) * 100));
+  box-sizing: border-box;
+  color: #fff;
+  .bg-img {
+    transform-origin: center left;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      background: linear-gradient(#60707A, #34333B);
+      opacity: 0.6;
+    }
+  }
+  .swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .swiper-slide {
+      position: relative;
+      overflow: hidden;
+
+      &:nth-child(2n) {
+        .bg-img {
+          transform-origin: center right;
+        }
+      }
+    }
+    
+  }
+  .section-first__img-slider {
+    
+  }
+
+  .section-first__text-slider {
+    .container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    } 
+  }
+
+  h1, .h1 {
+    text-align: center;
+  }
+
+  .accent-btn {
+    display: none;
+  }
+
+  .navigation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // padding: 0;
+    // max-width: 1140px;
+  }
+  
+  .section-first__navigation {
+    position: absolute;
+    right: 0;
+    left: 50%;
+    top: 65%;
+    width: 150px;
+    margin-left: -75px;
+    
+  }
+
+  .weather-container {
+    width: 100%;
+    position: absolute;
+    z-index: 50;
+  }
+  .section-first__weather {
+    width: 100%;
+    // padding: 12px 0;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 8px;
+    max-width: 290px;
+    margin: 35px auto 0;
+    position: relative;
+    .half {
+      flex-grow: 1;
+      display: flex;
+      height: 100%;
+      width: 50%;
+      align-items: center;
+      position: relative;
+      &:first-child {
+        justify-content: flex-end;
+        padding-left: 15px;
+        padding-right: 17px;
+        padding-left: 0;
+
+        &:after {
+          content: '';
+          position: absolute;
+          // margin: 0 17px 0 15px;
+          top: 15px;
+          bottom: 11px;
+          // height: 21px;
+          width: 2px;
+          background-color: #707070;
+          // flex-grow: 0;
+          right: 8px;
+        }
+      }
+    }
+
+    .city {
+      font-size: 17px;
+      font-weight: 600;
+      margin-right: 12px;
+      line-height: 17px;
+    }
+
+    .time {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 17px;
+    }
+
+    .ico {
+      width: 24px;
+      height: 16px;
+      margin-right: 6px;
+      line-height: 17px;
+    }
+
+    .temperature {
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 17px;
+    }
+
+    
+  }
+}
+
+.section-2 {
+  .wrapper {
+    margin: 100px;
+    border: 1px solid #000;
+    width: 300px;
+    height: 300px;
+  }
+  .fixed {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: fixed;
+  }
+}

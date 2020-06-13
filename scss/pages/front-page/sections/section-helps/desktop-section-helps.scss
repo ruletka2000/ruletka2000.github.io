@@ -1,0 +1,48 @@
+@import '../../../../global/vars';
+@import '../../../../global/mixins';
+
+@include minw(1366px) {
+  .section-helps {
+    padding-top: 0;
+    .helps-list {
+      display: flex;
+      
+    } 
+    .helps-item { 
+      margin-bottom: 0;
+      flex-basis: 0;
+      flex-grow: 1;
+      padding: 9vh 50px 10vh;
+    }
+
+    .bg-img {
+      &:before {
+        background: linear-gradient(#60707A, #34333B);
+      }
+    }
+
+    .helps-item__title {
+      font-size: 28px;
+      line-height: 38px;
+      text-align: left;
+      margin-top: 31px;
+      @include minw(1680px) {
+        font-size: 34px;
+        line-height: 46px;
+        
+      }
+    }
+    .helps-item__text {
+      font-size: 16px;
+      line-height: 26px;
+      text-align: left;
+      max-width: 250px;
+      margin-left: 0;
+      @include minw(1680px) {
+        font-size: 17px;
+        line-height: 28px;
+        
+      }
+    }
+  }
+}

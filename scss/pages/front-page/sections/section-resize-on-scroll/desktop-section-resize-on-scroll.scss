@@ -1,0 +1,18 @@
+@import '../../../../global/vars';
+@import '../../../../global/mixins';
+
+@include minw(1366px) {
+  .section-resize-on-scroll {
+    .section-logo {
+      width: 203px;
+      height: 26.5px;
+      margin-top: 67px;
+    }
+
+    .sub-title {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 77px;
+    }
+  }
+}

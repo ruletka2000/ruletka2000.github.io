@@ -1,0 +1,568 @@
+@import '../../../../global/vars';
+@import '../../../../global/mixins';
+
+@include minw(1366px) {
+  .section-flights {
+    .filter-flights-form {
+      .form-inner {
+        display: flex;
+        margin-top: 49px;
+        .radio-filter-wrap {
+          width: auto;
+          
+          justify-content: flex-start;
+          label {
+            flex-shrink: 0;
+            input:checked + .text {
+              height: 100px;
+            }
+            @include maxw(1680px) {
+              input:checked + .text {
+                height: 90px;
+              }
+            }
+            .text {
+              width: auto;
+              white-space: nowrap;
+              font-size: 21px;
+              font-weight: 600;
+              padding: 28px 85px 30px 120px;
+              height: 80px;
+              &:before {
+                top: 50%;
+                transform: translateY(-50%);
+                left: 70px;
+              }
+              @include maxw(1680px) {
+                padding: 30px 50px 25px 80px;
+                height: 70px;
+                &:before {
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: 30px;
+                }
+              }
+            }
+            .text.prylit:before {
+              top: 50%;
+                transform: translateY(-50%);
+            }
+            .text.rozklad {
+              
+              &:before {
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+            
+          }
+        }
+        .data-picker-wrap {
+          margin-top: 0;
+          margin-right: 15px;
+          width: 270px;
+          height: 73px;
+          position: relative;
+          .toggle-label {
+            height: 73px;
+          }
+        }
+        .row {
+          margin-top: 0;
+          flex-grow: 1;
+          .input-text-wrap {
+            margin-top: 0;
+            height: 73px;
+            input {
+              height: 73px;
+            }
+          }
+          .accent-btn {
+            display: none;
+          }
+        }
+      }
+    }
+    .flights-table {
+      .flights-item{
+        display: flex;
+        &:hover {
+          cursor: pointer;
+          background-color: #F6F5FF;
+        }
+        align-items: center;
+        
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: none;
+        }
+        &.only-desk {
+          display: flex;
+          position: relative;
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            left: 0px;
+            right: 0px;
+            background-color: #E0E0E0;
+          }
+          & > * {
+            color: #6C6B75!important;
+            font-size: 16px!important;
+            font-weight: 400!important;
+          }
+        }
+
+        .time {
+          order: 1;
+          width: 7%;
+          padding-left: 20px;
+          font-size: 16px;
+          font-weight: 400;
+        }
+        .company {
+          order: 2;
+          width: 27%;
+          display: flex;
+          font-size: 16px;
+          font-weight: 500;
+          align-items: center;
+          .logo {
+            display: block;
+            width: 47px;
+            height: 47px;
+            margin-right: 10px;
+          }
+        }
+        .number {
+          order: 3;
+          width: 11%;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .vector {
+          order: 4;
+          width: 23%;
+          .name {
+            font-size: 16px;
+            font-weight: 500;
+          }
+          .sub-name {
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+        .status {
+          order: 5;
+          width: 11%;
+          font-size: 16px;
+
+        }
+        .fact-time {
+          order: 6;
+          width: 7%;
+          font-size: 16px;
+        }
+        .terminal {
+          order: 7;
+          width: 8%;
+          font-size: 16px;
+          font-weight: 500;
+          .prompt {
+            display: none;
+          }
+        }
+        .geit {
+          font-size: 16px;
+          font-weight: 500;
+          order: 8;
+          .prompt {
+            display: none;
+          }
+        }
+      }
+
+      
+    }
+  }
+  .flights-more-info {
+    z-index: 300;
+    opacity: 0;
+    transform: none;
+    pointer-events: none;
+    background-color: #F6F5FF;
+    &.open {
+      pointer-events: all;
+    }
+  }
+  .flights-more-info__inner {
+    padding-top: 95px;
+    min-height: calc(100% - 95px);
+    // display: flex;
+    .container {
+      transform: translateX(80px);
+      display: flex;
+      .container-wrap {
+        flex-grow: 1;
+        margin-right: 48px;
+      }
+    }
+    .link {
+      &:after {
+        width: 18px;
+        height: 18px;
+        top: 5px;
+      }
+
+      
+    }
+    .aside {
+      width: 100%;
+      max-width: 360px;
+      // flex-shrink: 0;
+      .img-wrap {
+        img {
+          object-fit: contain;
+          object-position: top;
+        }
+      }
+    }
+
+    .row {
+      .btn-back {
+        color: $accent;
+        font-weight: 600;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover {
+          &:before {
+            transform: translateX(-10px);
+          }
+        }
+        &:before {
+          transition: all 0.3s ease-in-out;
+          background-image: url('../../../img/arrow-to-left-accent.svg');
+        }
+      }
+    }
+
+    .warning {
+      margin-top: 39px;
+      padding: 26px 75px 25px 103px;
+      &:before {
+        left: 36px;
+        top: 30px;
+        transform: none;
+      }
+    }
+
+    .warning__title {
+      text-align: left;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .warning__text {
+      text-align: left;
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 6px;
+    }
+    .warning__close-btn {
+      top: 44px;
+      right: 43px;
+    }
+
+    .sub-title {
+      font-size: 19px;
+      line-height: 30px;
+      @include maxw(1680px) {
+        font-size: 17px;
+        line-height: 27px;
+      }
+    }
+
+    h4 {
+      font-size: 22px;
+      line-height: 30px;
+      @include maxw(1680px) {
+        font-size: 19px;
+        line-height: 28px;
+      }
+    }
+
+    .info-about-flight {
+      display: grid;
+      grid-template-columns: 3fr 1fr 3fr 3fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "numberSub . airline airline"
+        "number  . airline airline"
+        "kod . . ."
+        "btn . airplane airport";
+
+      .number-of-flight-subtitle {
+        grid-area: numberSub;
+        font-size: 31px;
+        font-weight: 600;
+        line-height: 41px;
+        @include maxw(1680px) {
+          font-size: 28px;
+          line-height: 35px;
+        }
+      }
+      .number-of-flight {
+        grid-area: number;
+        font-size: 85px;
+        line-height: 113px;
+        @include maxw(1680px) {
+          font-size: 75px;
+          line-height: 100px;
+        }
+      }
+      .kod {
+        grid-area: kod;
+      }
+      .accent-btn {
+        grid-area: btn;
+        white-space: nowrap;
+        margin-top: 30px;
+        padding: 0 40px;
+        @include maxw(1680px) {
+          padding: 0 25px;
+        }
+        &:after {
+          display: none;
+        }
+      }
+      .airline-info {
+        grid-area: airline;
+        margin: 0;
+        column-gap: 25px;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+        "logo subTitle "
+        "logo link";
+        .logo {
+          .img-wrap {
+            padding-left: 15px;
+            box-sizing: border-box;
+          }
+        }
+        .logo {
+          grid-area: logo;
+        }
+        .sub-title {
+          grid-area: subTitle;
+          font-size: 19px;
+          line-height: 30px;
+          @include maxw(1680px) {
+            font-size: 17px;
+            line-height: 27px;
+          }
+        }
+    
+        .link {
+          grid-area: link;
+          font-size: 22px;
+          line-height: 30px;
+          @include maxw(1680px) {
+            font-size: 19px;
+            line-height: 28px;
+          }
+        }
+      }
+      .airplane {
+        grid-area: airplane;
+        margin: 0;
+        .sub-title {
+          font-size: 19px;
+          line-height: 30px;
+          @include maxw(1680px) {
+            font-size: 17px;
+            line-height: 27px;
+          }
+        }
+    
+        h4 {
+          font-size: 22px;
+          line-height: 30px;
+          @include maxw(1680px) {
+            font-size: 19px;
+            line-height: 28px;
+          }
+        }
+        
+      }
+      .airport {
+        grid-area: airport;
+        margin: 0;
+        .sub-title {
+          font-size: 19px;
+          line-height: 30px;
+          @include maxw(1680px) {
+            font-size: 17px;
+            line-height: 27px;
+          }
+        }
+    
+        .link {
+          font-size: 22px;
+          line-height: 30px;
+          @include maxw(1680px) {
+            font-size: 19px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    .flight-detail {
+      margin-top: 41px;
+      grid-template-areas: "airportInfo timingInfo";
+      grid-template-columns: 2fr 1fr;
+      
+      column-gap: 80px;
+      @include maxw(1680px) {
+        column-gap: 30px;
+      }
+      .flight-airport-info {
+        grid-area: airportInfo;
+        grid-template-rows: min-content min-content min-content min-content min-content;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "countryStart countryStart countryEnd countryEnd"
+        "cityStart cityStart cityEnd cityEnd"
+        "terminalStart terminalStart terminalEnd terminalEnd"
+        "timeStart flightImg flightImg timeEnd"
+        "dateStart timeInAir timeInAir dateEnd";
+
+        &:after {
+          display: none;
+        }
+        .time-in-air {
+          grid-area: timeInAir;
+          margin: 0;
+          justify-self: center;
+          align-self: flex-end;
+          .sub-title {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+            @include maxw(1680px) {
+              font-size: 18px;
+              line-height: 18px;
+            }
+          }
+          .time-in-air__time {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+            @include maxw(1680px) {
+              font-size: 18px;
+              line-height: 18px;
+            }
+          }
+        }
+
+        .flight-img {
+          grid-area: flightImg;
+          justify-self: center;
+          margin: 0;
+          background-image: url('../../../img/flight-path-desk.svg');
+          width: 100%;
+          height: 46px;
+          align-self: end;
+        }
+
+        .country {
+          &.country--start {
+            grid-area: countryStart;
+          }
+          &.country--end {
+            grid-area: countryEnd;
+            justify-self: end;
+          }
+        }
+
+        .city {
+          &.city--start {
+            grid-area: cityStart;
+          }
+          &.city--end {
+            grid-area: cityEnd;
+            justify-self: end;
+          }
+        }
+
+        .terminal {
+          margin-top: 5px;
+          &.terminal--start {
+            grid-area: terminalStart;
+          }
+          &.terminal--end {
+            grid-area: terminalEnd;
+            justify-self: end;
+          }
+        }
+
+        .time {
+          margin-top: 0;
+          align-self: end;
+          &.time--start {
+            grid-area: timeStart;
+          }
+          &.time--end {
+            grid-area: timeEnd;
+            justify-self: end;
+          }
+        }
+
+        .date {
+          margin-top: 5px;
+          &.date--start {
+            grid-area: dateStart;
+          }
+          &.date--end {
+            grid-area: dateEnd;
+            justify-self: end;
+          }
+        }
+
+      }
+
+      .flight-timing-info {
+        &:after {
+          display: none;
+        }
+        grid-area: timingInfo;
+        margin: 0;
+        .title {
+          font-size: 22px;
+          line-height: 30px;
+          font-weight: 500;
+          align-self: start;
+          @include maxw(1680px) {
+            font-size: 19px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    .flight-share {
+      display: flex;
+      .link-grey {
+        margin-bottom: 0;
+        margin-right: 35px;
+      }
+    }
+  }
+
+  
+  
+}

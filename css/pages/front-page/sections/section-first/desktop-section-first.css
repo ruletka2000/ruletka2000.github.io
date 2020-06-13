@@ -1,0 +1,100 @@
+@media only screen and (min-width: 1366px) {
+  .section-first .bg-img:before {
+    opacity: 0.4;
+  }
+  .section-first .section-first__text-slider .container {
+    top: 55%;
+  }
+  .section-first h1, .section-first .h1 {
+    text-align: left;
+  }
+  .section-first .accent-btn {
+    margin-top: 64px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .section-first .navigation-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .section-first .section-first__navigation {
+    position: relative;
+    right: 0;
+    top: 0;
+    left: auto;
+    bottom: 0;
+    width: 66px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .section-first .weather-container {
+    left: 0;
+    right: 0;
+  }
+  .section-first .section-first__weather {
+    margin-left: 0;
+    margin-top: 45px;
+    height: 56px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-height: 650px) {
+  .section-first .section-first__weather {
+    height: 66px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .section-first .section-first__weather .half {
+    -webkit-box-flex: unset;
+        -ms-flex-positive: unset;
+            flex-grow: unset;
+    width: auto;
+    padding-left: 20px;
+  }
+  .section-first .section-first__weather .half:first-child {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+  .section-first .section-first__weather .half:first-child:after {
+    top: 20px;
+    bottom: 16px;
+    right: 0;
+  }
+  .section-first .section-first__weather .city {
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 12px;
+    line-height: 33px;
+  }
+  .section-first .section-first__weather .time {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+  }
+  .section-first .section-first__weather .ico {
+    width: 34px;
+    height: 23px;
+    margin-right: 8px;
+    line-height: auto;
+  }
+  .section-first .section-first__weather .temperature {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 33px;
+  }
+}

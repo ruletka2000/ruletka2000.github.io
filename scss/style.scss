@@ -1,0 +1,77 @@
+.main-wrap {
+  overflow: auto;
+}
+
+.days-wrap {
+  display: flex;
+  padding: 20px;
+}
+
+.day {
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.day__section {
+  margin-bottom: 10px;
+  padding: 10px;
+
+  .row {
+    display: flex;
+  }
+
+  &.disabled {
+    background-color: rgba( #ccc , 0.5);
+  }
+  &.res50 {
+    background-color:rgba(  #15ff00 , 0.5);
+  }
+  &.res30 {
+    background-color: rgba( #6eff61 , 0.5);
+  }
+  &.res10 {
+    background-color: rgba( #a0fa98 , 0.5);
+  }
+  &.res0 {
+    background-color: rgba( #e0fa98 , 0.5);
+  }
+  &.res-0 {
+    background-color: rgba( #ffc48d , 0.5);
+  }
+  &.res-10 {
+    background-color: rgba( #fd9c63 , 0.5);
+  }
+  &.res-30 {
+    background-color: rgba( #ff6435 , 0.5);
+  }
+  &.res-50 {
+    background-color: rgba( #ff3d02 , 0.5);
+  }
+}
+
+button.clear {
+  background-color: tomato;
+  padding: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px;
+  color: #fff;
+  font-family: 'Manrope', sans-serif;
+  cursor: pointer;
+}
+button.search {
+  background-color: burlywood;
+  padding: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px;
+  color: #fff;
+  font-family: 'Manrope', sans-serif;
+  cursor: pointer;
+}
+
+#search {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-left: 20px;
+}
