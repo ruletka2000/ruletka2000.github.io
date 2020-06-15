@@ -110,10 +110,11 @@ function search() {
 function createDay(wrap, date, arr, kof) {
   let day = document.createElement('li');
   day.classList.add('day');
+  let obj = createLastSection(day, date, arr, kof);
 
-  let resultDay = createLastSection(day, date, arr, kof).r;
-  let b = createLastSection(day, date, arr, kof).b;
-  let m = createLastSection(day, date, arr, kof).m;
+  let resultDay = obj.r;
+  let b = obj.b;
+  let m = obj.m;
 
   for(let i = 0; i < 23; i++) {
     createDaySection(day, date, i,0,(i+1), 0, arr, kof);
@@ -184,6 +185,7 @@ function createLastSection(day, dateName, arr, kof) {
   createRowSpace(daySection, `${BM.m} <= ${kof} > ${BM.b} | мы в + на: ${(BM.b*(kof-1) - BM.m).toFixed(2)}`);
   createRowSpace(daySection, `Результат: ${(BM2.result).toFixed(2)}`);
   createRowSpace(daySection, `Максимальный минус: ${(BM2.minResult).toFixed(2)}`);
+  createRowSpace(daySection, `Периоды: ${JSON.stringify((BM2.periodObj), null, 2)}`);
 
   day.append(daySection);
   return ({r:(BM2.result).toFixed(2), b:BM.b, m:BM.m});
@@ -334,12 +336,19 @@ function getBolsheMenshe2(arr1, kof) {
   let result = 0;;
   let minResult = 0;
   let arrRes = [];
+  let lastWinIndex = null;
+  let arrWinIndex = [];
   let arr  = arr1.reverse();
   arr.forEach((item, i)=>{
       // console.log(item);
       if(item.kof > kof) {
           counterBolshe++;
           result += (kof - 1);
+          if(lastWinIndex) {
+            arrWinIndex.push((i - lastWinIndex - 1));
+          } 
+          lastWinIndex = i;
+          
       } else {
           counterMenshe++;
           result--;
@@ -363,9 +372,13 @@ function getBolsheMenshe2(arr1, kof) {
 
       }
   })
+  let periodObj= {};
+  arrWinIndex.forEach((period)=>{
+    periodObj[period] = (periodObj[period]) ? (periodObj[period] + 1) : 1;
+  });
 
   
-      return {'b': counterBolshe, 'm': counterMenshe, 'minResult': minResult, 'result':result, 'arrRes':arrRes}
+      return {'b': counterBolshe, 'm': counterMenshe, 'minResult': minResult, 'result':result, 'arrRes':arrRes, 'periodObj':periodObj}
   
   
 }

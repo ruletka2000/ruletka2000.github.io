@@ -102,10 +102,11 @@ function search() {
 function createDay(wrap, date, arr, kof) {
   var day = document.createElement('li');
   day.classList.add('day');
+  var obj = createLastSection(day, date, arr, kof);
 
-  var resultDay = createLastSection(day, date, arr, kof).r;
-  var b = createLastSection(day, date, arr, kof).b;
-  var m = createLastSection(day, date, arr, kof).m;
+  var resultDay = obj.r;
+  var b = obj.b;
+  var m = obj.m;
 
   for (var i = 0; i < 23; i++) {
     createDaySection(day, date, i, 0, i + 1, 0, arr, kof);
@@ -174,6 +175,7 @@ function createLastSection(day, dateName, arr, kof) {
   createRowSpace(daySection, BM.m + ' <= ' + kof + ' > ' + BM.b + ' | \u043C\u044B \u0432 + \u043D\u0430: ' + (BM.b * (kof - 1) - BM.m).toFixed(2));
   createRowSpace(daySection, '\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442: ' + BM2.result.toFixed(2));
   createRowSpace(daySection, '\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u043C\u0438\u043D\u0443\u0441: ' + BM2.minResult.toFixed(2));
+  createRowSpace(daySection, '\u041F\u0435\u0440\u0438\u043E\u0434\u044B: ' + JSON.stringify(BM2.periodObj, null, 2));
 
   day.append(daySection);
   return { r: BM2.result.toFixed(2), b: BM.b, m: BM.m };
@@ -319,12 +321,18 @@ function getBolsheMenshe2(arr1, kof) {
   var result = 0;;
   var minResult = 0;
   var arrRes = [];
+  var lastWinIndex = null;
+  var arrWinIndex = [];
   var arr = arr1.reverse();
   arr.forEach(function (item, i) {
     // console.log(item);
     if (item.kof > kof) {
       counterBolshe++;
       result += kof - 1;
+      if (lastWinIndex) {
+        arrWinIndex.push(i - lastWinIndex - 1);
+      }
+      lastWinIndex = i;
     } else {
       counterMenshe++;
       result--;
@@ -345,8 +353,12 @@ function getBolsheMenshe2(arr1, kof) {
       }
     }
   });
+  var periodObj = {};
+  arrWinIndex.forEach(function (period) {
+    periodObj[period] = periodObj[period] ? periodObj[period] + 1 : 1;
+  });
 
-  return { 'b': counterBolshe, 'm': counterMenshe, 'minResult': minResult, 'result': result, 'arrRes': arrRes };
+  return { 'b': counterBolshe, 'm': counterMenshe, 'minResult': minResult, 'result': result, 'arrRes': arrRes, 'periodObj': periodObj };
 }
 
 function getBolsheMenshe(arr, kof) {
