@@ -34,6 +34,8 @@ arr.forEach(function (day) {
   console.log('sov', sov);
 });
 
+// let NEWCOPYARR = [];
+
 arr.forEach(function (day) {
   var sov = 0;
   day.arr.forEach(function (item, i) {
@@ -53,6 +55,10 @@ arr.forEach(function (day) {
   });
   console.log('sov', sov);
 });
+// let textarea = document.querySelector('.to-copy');
+// textarea.value = JSON.stringify(arr, null, 2);
+
+
 console.log('countStav1', countStav1);
 
 document.querySelector('.main-wrap').style.width = daysWrap.scrollWidth + 'px';
@@ -72,20 +78,24 @@ document.querySelector('#search').addEventListener('input', function (e) {
 function search() {
   daysWrap.innerHTML = '';
   var AllResult = 0;
+  var AllB = 0;
+  var AllM = 0;
   setTimeout(function () {
     arr.forEach(function (day, i) {
 
       var date = day.name;
       var arr = day.arr;
 
-      var resultDay = createDay(daysWrap, date, arr, needDedCof);
-      AllResult += +resultDay;
+      var obj = createDay(daysWrap, date, arr, needDedCof);
+      AllResult += +obj.r;
+      AllB += +obj.b;
+      AllM += +obj.m;
     });
   }, 300);
 
   setTimeout(function () {
     document.querySelector('.main-wrap').style.width = daysWrap.scrollWidth + 'px';
-    document.querySelector('#info').innerHTML = AllResult;
+    document.querySelector('#info').innerHTML = 'r: ' + AllResult + ', b: ' + AllB + ', m: ' + AllM;
   }, 800);
 }
 
@@ -93,7 +103,9 @@ function createDay(wrap, date, arr, kof) {
   var day = document.createElement('li');
   day.classList.add('day');
 
-  var resultDay = createLastSection(day, date, arr, kof);
+  var resultDay = createLastSection(day, date, arr, kof).r;
+  var b = createLastSection(day, date, arr, kof).b;
+  var m = createLastSection(day, date, arr, kof).m;
 
   for (var i = 0; i < 23; i++) {
     createDaySection(day, date, i, 0, i + 1, 0, arr, kof);
@@ -101,7 +113,7 @@ function createDay(wrap, date, arr, kof) {
   createDaySection(day, date, 23, 0, 23, 59, arr, kof);
 
   wrap.append(day);
-  return resultDay;
+  return { r: resultDay, b: b, m: m };
 }
 
 function createDaySection(day, date, startH, startM, endH, endM, arr, kof) {
@@ -164,7 +176,7 @@ function createLastSection(day, dateName, arr, kof) {
   createRowSpace(daySection, '\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u043C\u0438\u043D\u0443\u0441: ' + BM2.minResult.toFixed(2));
 
   day.append(daySection);
-  return BM2.result.toFixed(2);
+  return { r: BM2.result.toFixed(2), b: BM.b, m: BM.m };
 }
 
 function createRowSpace(daySection, str) {
@@ -340,12 +352,18 @@ function getBolsheMenshe2(arr1, kof) {
 function getBolsheMenshe(arr, kof) {
   var counterMenshe = 0;
   var counterBolshe = 0;
+  var activeThrottle = 0;
   arr.forEach(function (item, i) {
     // console.log(item);
-    if (item.kof > kof) {
-      counterBolshe++;
+    if (activeThrottle == 0) {
+      if (item.kof > kof) {
+        counterBolshe++;
+        activeThrottle = 0;
+      } else {
+        counterMenshe++;
+      }
     } else {
-      counterMenshe++;
+      activeThrottle--;
     }
   });
   return { 'b': counterBolshe, 'm': counterMenshe };

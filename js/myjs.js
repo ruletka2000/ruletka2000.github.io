@@ -35,6 +35,8 @@ arr.forEach((day)=>{
   console.log('sov', sov);
 });
 
+// let NEWCOPYARR = [];
+
 arr.forEach((day)=>{
   let sov = 0;
   day.arr.forEach((item, i)=>{
@@ -59,6 +61,10 @@ arr.forEach((day)=>{
   });
   console.log('sov', sov);
 });
+// let textarea = document.querySelector('.to-copy');
+// textarea.value = JSON.stringify(arr, null, 2);
+
+
 console.log('countStav1', countStav1);
 
 document.querySelector('.main-wrap').style.width = daysWrap.scrollWidth + 'px';
@@ -78,21 +84,25 @@ document.querySelector('#search').addEventListener('input', (e)=>{
 function search() {
   daysWrap.innerHTML = '';
   let AllResult = 0;
+  let AllB = 0;
+  let AllM = 0;
   setTimeout(()=>{
     arr.forEach((day, i)=>{
 
       const date = day.name;
       const arr = day.arr;
     
-      let resultDay = createDay(daysWrap, date, arr, needDedCof);
-      AllResult += +resultDay;
+      let obj = createDay(daysWrap, date, arr, needDedCof);
+      AllResult += +obj.r;
+      AllB += +obj.b;
+      AllM += +obj.m;
     });
   }, 300);
   
 
   setTimeout(()=>{
     document.querySelector('.main-wrap').style.width = daysWrap.scrollWidth + 'px';
-    document.querySelector('#info').innerHTML = AllResult;
+    document.querySelector('#info').innerHTML = (`r: ${AllResult}, b: ${AllB}, m: ${AllM}` );
   }, 800);
   
 }
@@ -101,7 +111,9 @@ function createDay(wrap, date, arr, kof) {
   let day = document.createElement('li');
   day.classList.add('day');
 
-  let resultDay = createLastSection(day, date, arr, kof);
+  let resultDay = createLastSection(day, date, arr, kof).r;
+  let b = createLastSection(day, date, arr, kof).b;
+  let m = createLastSection(day, date, arr, kof).m;
 
   for(let i = 0; i < 23; i++) {
     createDaySection(day, date, i,0,(i+1), 0, arr, kof);
@@ -111,7 +123,7 @@ function createDay(wrap, date, arr, kof) {
   
 
   wrap.append(day);
-  return resultDay;
+  return ({r:resultDay, b:b, m:m});
 }
 
 function createDaySection(day, date, startH, startM, endH, endM, arr, kof) {
@@ -174,7 +186,7 @@ function createLastSection(day, dateName, arr, kof) {
   createRowSpace(daySection, `Максимальный минус: ${(BM2.minResult).toFixed(2)}`);
 
   day.append(daySection);
-  return (BM2.result).toFixed(2);
+  return ({r:(BM2.result).toFixed(2), b:BM.b, m:BM.m});
 }
 
 function createRowSpace(daySection, str) {
@@ -361,13 +373,20 @@ function getBolsheMenshe2(arr1, kof) {
 function getBolsheMenshe(arr, kof) {
   let counterMenshe = 0;
   let counterBolshe = 0;
+  let activeThrottle = 0;
   arr.forEach((item, i)=>{
       // console.log(item);
-      if(item.kof > kof) {
+      if(activeThrottle == 0) {
+        if(item.kof > kof) {
           counterBolshe++;
+          activeThrottle = 0;
+        } else {
+            counterMenshe++;
+        }
       } else {
-          counterMenshe++;
+        activeThrottle--;
       }
+      
   })
   return {'b': counterBolshe, 'm': counterMenshe}
 }
