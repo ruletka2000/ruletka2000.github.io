@@ -14,47 +14,57 @@ var needDedCof = 1000;
 
 // document.addEventListener('copy', modifyCopy);
 var countStav1 = 0;
-arr.forEach(function (day) {
-  var sov = 0;
-  day.arr.forEach(function (item, i) {
-    var kof = item.kof;
-    var hour = item.hour;
-    var min = item.min;
-    var sec = item.sec;
-    countStav1++;
-    day.arr.forEach(function (item2, j) {
-      if (i != j && kof == item2.kof && hour == item2.hour && min == item2.min && sec == item2.sec) {
-        console.log('item', item);
-        console.log('item2', item2);
-        sov++;
-        day.arr.splice(j, 1);
-      }
-    });
-  });
-  console.log('sov', sov);
-});
+// arr.forEach((day)=>{
+//   let sov = 0;
+//   day.arr.forEach((item, i)=>{
+//     let kof = item.kof;
+//     let hour = item.hour;
+//     let min = item.min;
+//     let sec = item.sec;
+//     countStav1++;
+//     day.arr.forEach((item2, j)=>{
+//       if(i != j && 
+//         (kof == item2.kof && 
+//           hour == item2.hour &&
+//           min == item2.min &&
+//           sec == item2.sec
+//         )) {
+//           console.log('item', item );
+//           console.log('item2', item2 );
+//           sov++;
+//           day.arr.splice(j, 1);
+//         }
+//     });
+//   });
+//   console.log('sov', sov);
+// });
 
 // let NEWCOPYARR = [];
 
-arr.forEach(function (day) {
-  var sov = 0;
-  day.arr.forEach(function (item, i) {
-    var kof = item.kof;
-    var hour = item.hour;
-    var min = item.min;
-    var sec = item.sec;
+// arr.forEach((day)=>{
+//   let sov = 0;
+//   day.arr.forEach((item, i)=>{
+//     let kof = item.kof;
+//     let hour = item.hour;
+//     let min = item.min;
+//     let sec = item.sec;
 
-    day.arr.forEach(function (item2, j) {
-      if (i != j && kof == item2.kof && hour == item2.hour && min == item2.min && sec == item2.sec) {
-        console.log('item', item);
-        console.log('item2', item2);
-        sov++;
-        day.arr.splice(j, 1);
-      }
-    });
-  });
-  console.log('sov', sov);
-});
+//     day.arr.forEach((item2, j)=>{
+//       if(i != j && 
+//         (kof == item2.kof && 
+//           hour == item2.hour &&
+//           min == item2.min &&
+//           sec == item2.sec
+//         )) {
+//           console.log('item', item );
+//           console.log('item2', item2 );
+//           sov++;
+//           day.arr.splice(j, 1);
+//         }
+//     });
+//   });
+//   console.log('sov', sov);
+// });
 // let textarea = document.querySelector('.to-copy');
 // textarea.value = JSON.stringify(arr, null, 2);
 
@@ -80,24 +90,43 @@ function search() {
   var AllResult = 0;
   var AllB = 0;
   var AllM = 0;
+  var per = '';
+  var arr002 = [];
   setTimeout(function () {
     arr.forEach(function (day, i) {
 
       var date = day.name;
       var arr = day.arr;
-
+      arr002 = [].concat(_toConsumableArray(arr002), _toConsumableArray(arr));
       var obj = createDay(daysWrap, date, arr, needDedCof);
       AllResult += +obj.r;
       AllB += +obj.b;
       AllM += +obj.m;
     });
+    var BM2 = getBolsheMenshe2(arr002, needDedCof);
+    console.dir(BM2);
+    per = JSON.stringify(BM2.periodObj, null, '\t');
+    console.log(per);
   }, 300);
 
   setTimeout(function () {
     document.querySelector('.main-wrap').style.width = daysWrap.scrollWidth + 'px';
-    document.querySelector('#info').innerHTML = 'r: ' + AllResult + ', b: ' + AllB + ', m: ' + AllM;
-  }, 800);
+    document.querySelector('#info').innerText = 'r: ' + AllResult + ', b: ' + AllB + ', m: ' + AllM;
+  }, 5000);
 }
+setTimeout(function () {
+  var maxHeight = 0;
+  document.querySelectorAll('.day__section--last').forEach(function (item) {
+    // console.log(item.offsetHeight);
+    if (item.offsetHeight > maxHeight) {
+      maxHeight = item.offsetHeight;
+    }
+  });
+  console.log(maxHeight);
+  document.querySelectorAll('.day__section--last').forEach(function (item) {
+    item.style.height = maxHeight + "px";
+  });
+}, 2000);
 
 function createDay(wrap, date, arr, kof) {
   var day = document.createElement('li');
@@ -165,6 +194,7 @@ function createDaySection(day, date, startH, startM, endH, endM, arr, kof) {
 function createLastSection(day, dateName, arr, kof) {
   var daySection = document.createElement('div');
   daySection.classList.add('day__section');
+  daySection.classList.add('day__section--last');
 
   var BM = getBolsheMenshe(arr, kof);
   var BM2 = getBolsheMenshe2(arr, kof);
@@ -175,7 +205,7 @@ function createLastSection(day, dateName, arr, kof) {
   createRowSpace(daySection, BM.m + ' <= ' + kof + ' > ' + BM.b + ' | \u043C\u044B \u0432 + \u043D\u0430: ' + (BM.b * (kof - 1) - BM.m).toFixed(2));
   createRowSpace(daySection, '\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442: ' + BM2.result.toFixed(2));
   createRowSpace(daySection, '\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u043C\u0438\u043D\u0443\u0441: ' + BM2.minResult.toFixed(2));
-  createRowSpace(daySection, '\u041F\u0435\u0440\u0438\u043E\u0434\u044B: ' + JSON.stringify(BM2.periodObj, null, 2));
+  createRowSpace(daySection, '\u041F\u0435\u0440\u0438\u043E\u0434\u044B: ' + JSON.stringify(BM2.periodObj, null, '\t'));
 
   day.append(daySection);
   return { r: BM2.result.toFixed(2), b: BM.b, m: BM.m };
@@ -185,7 +215,7 @@ function createRowSpace(daySection, str) {
   var row = document.createElement('div');
   row.classList.add('row');
 
-  row.innerHTML = str;
+  row.innerText = str;
   // createDate(row, date);
 
   daySection.append(row);
